@@ -1,4 +1,16 @@
 name: ChronoAnchors
-version: '${project.version}'
+version: '1.0-SNAPSHOT'
 main: com.gaurav.chronoanchors.ChronoAnchors
 api-version: '1.21'
+author: GauravBuilds
+description: Manipulate the fabric of time! Localized speed and slowness zones.
+commands:
+  chronoanchor:
+    description: Main command for ChronoAnchors plugin.
+    usage: /<command> [reload]
+    permission: chronoanchors.command.reload # The permission required to use this command
+    permission-message: You do not have permission to use this command.
+permissions:
+  chronoanchors.command.reload:
+    description: Allows a player to reload the ChronoAnchors plugin configuration.
+    default: op # By default, only server operators (ops) will have this permission.

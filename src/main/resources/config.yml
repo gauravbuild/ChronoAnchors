@@ -1,0 +1,72 @@
+# =====================================================================
+# ChronoAnchors Plugin Configuration
+# Fine-tune the localized time distortion fields.
+# =====================================================================
+
+# Anchor Block Type:
+# Specifies the Minecraft block that will act as a Chrono Anchor.
+# When a player right-clicks this block with the 'activation-item-type',
+# it becomes an active time distortion source.
+# Default: BEACON (Example: END_PORTAL_FRAME, CONDUIT, LODESTONE)
+anchor-block-type: BEACON
+
+# Activation Item Type:
+# Defines the item required to activate or deactivate a Chrono Anchor.
+# Players must right-click the 'anchor-block-type' while holding this item.
+# Default: CLOCK (Example: COMPASS, NETHER_STAR, DIAMOND)
+activation-item-type: CLOCK
+
+# =====================================================================
+# Distortion Field Properties
+# =====================================================================
+
+# Effect Radius (in blocks):
+# The spherical radius around an active Chrono Anchor where the
+# time distortion effect will be applied to entities.
+# Default: 8 (Blocks)
+effect-radius: 8
+
+# Effect Duration (in ticks):
+# The duration (in server ticks, 20 ticks = 1 second) of the
+# potion effect applied to entities within the distortion field.
+# The effect is continuously reapplied, so a shorter duration is fine.
+# Default: 40 (Ticks = 2 seconds)
+effect-duration-ticks: 40
+
+# Effect Amplifier:
+# The strength of the potion effect (SLOWNESS or SPEED).
+# Amplifier 0 = Level I, 1 = Level II, 2 = Level III, etc.
+# Higher values result in stronger, more noticeable effects.
+# Default: 1 (Results in Level II effect)
+effect-amplifier: 1
+
+# Distortion Type:
+# Determines whether the Chrono Anchor slows down or speeds up entities.
+# Options: 'SLOW' (applies SLOWNESS) or 'FAST' (applies SPEED).
+# Default: SLOW
+distortion-type: SLOW
+
+# =====================================================================
+# Visual Feedback (Particles)
+# =====================================================================
+
+# Enable Particles:
+# Set to 'true' to display particle effects around active Chrono Anchors,
+# providing a clear visual indication of the distortion field.
+# Set to 'false' to disable particles.
+# Default: true
+enable-particles: true
+
+# Particle Type:
+# The specific type of particle to emit from active Chrono Anchors.
+# Choose from available Bukkit Particle enum values.
+# Examples: PORTAL, REDSTONE, END_ROD, SPELL_WITCH, CRIT, GLOW, FLAME, LAVA
+# Default: PORTAL
+particle-type: PORTAL
+
+# Particle Count:
+# The number of particles spawned around each active Chrono Anchor per tick.
+# Higher values create a denser, more intense particle effect.
+# Default: 10
+particle-count: 10
+
