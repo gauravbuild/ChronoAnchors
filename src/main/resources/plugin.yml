@@ -1,0 +1,4 @@
+name: ChronoAnchors
+version: '${project.version}'
+main: com.gaurav.chronoanchors.ChronoAnchors
+api-version: '1.21'
